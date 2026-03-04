@@ -1,5 +1,6 @@
 import type {Metadata} from 'next';
 import {Montserrat, Open_Sans} from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 
 const montserrat = Montserrat({
@@ -24,6 +25,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
     <html lang="pt-BR" className={`${montserrat.variable} ${openSans.variable}`}>
       <body className="bg-white text-gray-600 antialiased selection:bg-[#008575] selection:text-white font-body" suppressHydrationWarning>
         {children}
+        <Script src="/neolife-tracker.js" strategy="afterInteractive" />
       </body>
     </html>
   );

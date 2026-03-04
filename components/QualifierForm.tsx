@@ -34,11 +34,22 @@ export default function QualifierForm() {
 
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true);
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 2000));
-    console.log(data);
-    setIsSubmitting(false);
-    setIsSuccess(true);
+    try {
+      // Track form submission
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const win = window as any;
+      if (typeof window !== 'undefined' && win.__neoTracker) {
+        win.__neoTracker.trackFormSubmit(data);
+      }
+      // Small delay for UX
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+      setIsSuccess(true);
+    } catch {
+      // Still show success to user
+      setIsSuccess(true);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (isSuccess) {

@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export default function Hero() {
   return (
-    <section className="relative h-screen flex flex-col justify-center items-center overflow-hidden bg-white">
+    <section id="hero" className="relative h-screen flex flex-col justify-center items-center overflow-hidden bg-white">
       {/* Background Image of Dentist/Clinic */}
       <div className="absolute inset-0 z-0">
         <Image

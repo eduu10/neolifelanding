@@ -6,6 +6,18 @@
   --font-body: var(--font-body);
   --color-neolife-teal: #008575;
   --color-neolife-orange: #F49E00;
+
+  /* Dashboard theme */
+  --color-dash-bg: #0A0A0F;
+  --color-dash-card: #12121A;
+  --color-dash-border: #1E1E2E;
+  --color-dash-accent: #00D4AA;
+  --color-dash-indigo: #6366F1;
+  --color-dash-amber: #F59E0B;
+  --color-dash-red: #EF4444;
+  --color-dash-text: #E4E4E7;
+  --color-dash-muted: #71717A;
+  --color-dash-secondary: #A1A1AA;
 }
 
 @layer utilities {
