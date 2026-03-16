@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: false,
   },
+  experimental: {
+    optimizeCss: true,
+  },
   // Allow access to remote image placeholder.
   images: {
     remotePatterns: [

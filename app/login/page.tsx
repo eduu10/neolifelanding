@@ -4,8 +4,12 @@ import { useState } from 'react';
 import { createClient } from '@/lib/supabase/client';
 import { useRouter } from 'next/navigation';
 
+const USERNAME_MAP: Record<string, string> = {
+  lucas: 'lucas@neolifeodontologia.com.br',
+};
+
 export default function LoginPage() {
-  const [email, setEmail] = useState('');
+  const [login, setLogin] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
@@ -15,6 +19,8 @@ export default function LoginPage() {
     e.preventDefault();
     setError('');
     setLoading(true);
+
+    const email = USERNAME_MAP[login.toLowerCase()] || login;
 
     const supabase = createClient();
     const { error: authError } = await supabase.auth.signInWithPassword({
@@ -54,12 +60,12 @@ export default function LoginPage() {
           <form onSubmit={handleLogin} className="space-y-4">
             <div>
               <label className="block text-sm mb-2" style={{ color: '#A1A1AA' }}>
-                Email
+                Login
               </label>
               <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                type="text"
+                value={login}
+                onChange={(e) => setLogin(e.target.value)}
                 className="w-full px-4 py-3 rounded-lg text-sm outline-none transition-all focus:ring-2"
                 style={{
                   background: '#0A0A0F',
@@ -68,7 +74,7 @@ export default function LoginPage() {
                   // @ts-expect-error CSS custom property
                   '--tw-ring-color': '#00D4AA',
                 }}
-                placeholder="seu@email.com"
+                placeholder="Usuário ou email"
                 required
               />
             </div>

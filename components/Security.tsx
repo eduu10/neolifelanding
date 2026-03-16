@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'motion/react';
-import { ShieldCheck, FileText, Globe } from 'lucide-react';
+import { ShieldCheck, FileText, Monitor } from 'lucide-react';
 
 export default function Security() {
   return (
@@ -18,8 +18,8 @@ export default function Security() {
             <ShieldCheck className="w-12 h-12 text-neolife-teal" strokeWidth={1.5} />
           </div>
 
-          <h2 className="font-heading text-3xl md:text-4xl mb-8 mt-6 text-neolife-teal font-bold">Compromisso de Excelência</h2>
-          
+          <h2 className="font-heading text-3xl md:text-4xl mb-8 mt-6 text-neolife-teal font-bold">Transparência e Segurança</h2>
+
           <div className="grid md:grid-cols-3 gap-8 text-left">
             <div className="space-y-4">
               <div className="flex items-center gap-3 text-gray-800 font-bold font-heading">
@@ -27,27 +27,27 @@ export default function Security() {
                 <span>Contrato Transparente</span>
               </div>
               <p className="text-sm text-gray-500 leading-relaxed font-body">
-                Cláusulas claras sobre prazos, custos e responsabilidades. Sem letras miúdas ou surpresas.
+                Tudo formalizado: prazos, valores, garantias e responsabilidades. Você sabe exatamente o que esperar antes de iniciar.
               </p>
             </div>
 
             <div className="space-y-4">
               <div className="flex items-center gap-3 text-gray-800 font-bold font-heading">
-                <Globe className="w-5 h-5 text-neolife-teal" />
-                <span>Suporte Internacional</span>
+                <Monitor className="w-5 h-5 text-neolife-teal" />
+                <span>Acompanhamento Online</span>
               </div>
               <p className="text-sm text-gray-500 leading-relaxed font-body">
-                Rede de parceiros nos EUA para atendimentos de urgência e manutenção, se necessário.
+                Após o retorno aos EUA, seu acompanhamento é realizado online por teleconsulta. Não oferecemos suporte presencial nos Estados Unidos.
               </p>
             </div>
 
             <div className="space-y-4">
               <div className="flex items-center gap-3 text-gray-800 font-bold font-heading">
                 <ShieldCheck className="w-5 h-5 text-neolife-teal" />
-                <span>Garantia Estendida</span>
+                <span>Garantia Contratual</span>
               </div>
               <p className="text-sm text-gray-500 leading-relaxed font-body">
-                Cobertura completa para falhas de material ou execução, assegurando seu investimento.
+                Garantia conforme estabelecido em contrato, protegendo seu investimento com termos claros e justos.
               </p>
             </div>
           </div>

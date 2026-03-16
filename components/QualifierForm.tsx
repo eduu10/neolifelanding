@@ -76,9 +76,9 @@ export default function QualifierForm() {
     <section id="avaliacao" className="py-24 bg-white text-gray-600 relative overflow-hidden">
       <div className="container mx-auto px-6 max-w-3xl">
         <div className="text-center mb-12">
-          <h2 className="font-heading text-3xl md:text-4xl mb-4 text-neolife-teal font-bold">Avaliação Estruturada</h2>
+          <h2 className="font-heading text-3xl md:text-4xl mb-4 text-neolife-teal font-bold">Dê o Primeiro Passo</h2>
           <p className="text-gray-500 max-w-xl mx-auto text-sm font-light font-body">
-            Para garantir a excelência do atendimento, realizamos uma pré-análise do seu caso. Preencha o formulário abaixo.
+            Preencha o formulário e nossa equipe entrará em contato para entender seu caso e montar um plano personalizado. Sem compromisso.
           </p>
         </div>
 
@@ -91,8 +91,9 @@ export default function QualifierForm() {
         >
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-2">
-              <label className="text-xs uppercase tracking-wider text-gray-500 font-bold font-heading">Nome Completo</label>
+              <label htmlFor="name" className="text-xs uppercase tracking-wider text-gray-500 font-bold font-heading">Nome Completo</label>
               <input
+                id="name"
                 {...register('name')}
                 className="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 text-gray-800 focus:outline-none focus:border-neolife-teal focus:ring-1 focus:ring-neolife-teal transition-colors"
                 placeholder="Seu nome"
@@ -101,8 +102,9 @@ export default function QualifierForm() {
             </div>
 
             <div className="space-y-2">
-              <label className="text-xs uppercase tracking-wider text-gray-500 font-bold font-heading">Email</label>
+              <label htmlFor="email" className="text-xs uppercase tracking-wider text-gray-500 font-bold font-heading">Email</label>
               <input
+                id="email"
                 {...register('email')}
                 className="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 text-gray-800 focus:outline-none focus:border-neolife-teal focus:ring-1 focus:ring-neolife-teal transition-colors"
                 placeholder="seu@email.com"
@@ -113,8 +115,9 @@ export default function QualifierForm() {
 
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-2">
-              <label className="text-xs uppercase tracking-wider text-gray-500 font-bold font-heading">WhatsApp / Telefone</label>
+              <label htmlFor="phone" className="text-xs uppercase tracking-wider text-gray-500 font-bold font-heading">WhatsApp / Telefone</label>
               <input
+                id="phone"
                 {...register('phone')}
                 className="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 text-gray-800 focus:outline-none focus:border-neolife-teal focus:ring-1 focus:ring-neolife-teal transition-colors"
                 placeholder="+1 (555) 000-0000"
@@ -123,8 +126,9 @@ export default function QualifierForm() {
             </div>
 
             <div className="space-y-2">
-              <label className="text-xs uppercase tracking-wider text-gray-500 font-bold font-heading">Cidade/Estado (EUA)</label>
+              <label htmlFor="location" className="text-xs uppercase tracking-wider text-gray-500 font-bold font-heading">Cidade/Estado (EUA)</label>
               <input
+                id="location"
                 {...register('location')}
                 className="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 text-gray-800 focus:outline-none focus:border-neolife-teal focus:ring-1 focus:ring-neolife-teal transition-colors"
                 placeholder="Ex: Miami, FL"
@@ -134,8 +138,9 @@ export default function QualifierForm() {
           </div>
 
           <div className="space-y-2">
-            <label className="text-xs uppercase tracking-wider text-gray-500 font-bold font-heading">Principal Queixa ou Objetivo</label>
+            <label htmlFor="goal" className="text-xs uppercase tracking-wider text-gray-500 font-bold font-heading">Principal Queixa ou Objetivo</label>
             <textarea
+              id="goal"
               {...register('goal')}
               rows={3}
               className="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 text-gray-800 focus:outline-none focus:border-neolife-teal focus:ring-1 focus:ring-neolife-teal transition-colors resize-none"
@@ -145,8 +150,9 @@ export default function QualifierForm() {
           </div>
 
           <div className="space-y-2">
-            <label className="text-xs uppercase tracking-wider text-gray-500 font-bold font-heading">Previsão para Início</label>
+            <label htmlFor="timeframe" className="text-xs uppercase tracking-wider text-gray-500 font-bold font-heading">Previsão para Início</label>
             <select
+              id="timeframe"
               {...register('timeframe')}
               className="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 text-gray-800 focus:outline-none focus:border-neolife-teal focus:ring-1 focus:ring-neolife-teal transition-colors appearance-none"
             >
@@ -162,7 +168,7 @@ export default function QualifierForm() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full py-4 bg-neolife-orange text-white rounded-lg font-bold hover:bg-amber-600 transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 mt-4 shadow-lg shadow-neolife-orange/20 font-heading uppercase tracking-wide"
+            className="w-full py-4 bg-amber-600 text-white rounded-lg font-bold hover:bg-amber-700 transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 mt-4 shadow-lg shadow-amber-600/20 font-heading uppercase tracking-wide"
           >
             {isSubmitting ? (
               <>
@@ -170,7 +176,7 @@ export default function QualifierForm() {
                 Processando...
               </>
             ) : (
-              'Solicitar Avaliação'
+              'Quero Minha Avaliação Gratuita'
             )}
           </button>
         </motion.form>

@@ -10,11 +10,13 @@ export default function Hero() {
       {/* Background Image of Dentist/Clinic */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2068&auto=format&fit=crop"
+          src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=60&w=1200&auto=format&fit=crop"
           alt="Dentista especialista em clínica moderna"
           fill
           className="object-cover opacity-20"
           priority
+          sizes="100vw"
+          quality={50}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-white/60 to-white" />
       </div>
@@ -26,25 +28,27 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <span className="inline-block py-1 px-3 rounded-full bg-neolife-teal/10 border border-neolife-teal/20 text-neolife-teal text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-sm font-heading">
-            Neolife Odontologia
+            Para brasileiros que vivem no exterior
           </span>
           <h1 className="font-heading text-5xl md:text-7xl font-bold text-gray-800 leading-tight mb-6 tracking-tight">
-            Reabilitação digital estruturada para <span className="text-neolife-teal italic font-serif">pacientes internacionais.</span>
+            Seu sorriso planejado <span className="text-neolife-teal italic font-serif">antes da viagem ao Brasil.</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto font-light leading-relaxed mb-10 font-body">
-            Planejamento criterioso, fluxo digital integrado e acompanhamento remoto para brasileiros residentes nos EUA.
+            Reabilitação oral, lentes de porcelana e implantes com planejamento digital prévio. Tudo organizado à distância, executado durante sua estadia no Brasil e acompanhado online após o retorno.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center font-heading">
-            <a 
-              href="#metodo" 
+            <a
+              href="https://wa.me/553132214335?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 bg-neolife-teal text-white rounded-full font-bold hover:bg-teal-700 transition-colors duration-300 min-w-[200px] shadow-lg shadow-neolife-teal/20"
             >
-              Conheça o Método
+              Fale pelo WhatsApp
             </a>
-            <a 
-              href="#avaliacao" 
-              className="px-8 py-4 bg-neolife-orange text-white rounded-full font-bold hover:bg-amber-600 transition-all duration-300 min-w-[200px] shadow-lg shadow-neolife-orange/20"
+            <a
+              href="#avaliacao"
+              className="px-8 py-4 bg-amber-600 text-white rounded-full font-bold hover:bg-amber-700 transition-all duration-300 min-w-[200px] shadow-lg shadow-amber-600/20"
             >
               Agendar Avaliação
             </a>

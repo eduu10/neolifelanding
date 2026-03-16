@@ -7,20 +7,20 @@ const cases = [
   {
     id: 1,
     title: 'Reabilitação Total sobre Implantes',
-    description: 'Protocolo All-on-4 com carga imediata. Resolução estética e funcional em 72 horas.',
-    image: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1974&auto=format&fit=crop', // Dentist working
+    description: 'Sorriso completo restaurado com implantes e prótese fixa. Planejamento digital garantiu resultado natural e funcional, devolvendo confiança ao paciente.',
+    image: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1974&auto=format&fit=crop',
   },
   {
     id: 2,
-    title: 'Lentes de Contato Cerâmicas',
-    description: 'Planejamento digital do sorriso (DSD) e execução minimamente invasiva.',
-    image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=2070&auto=format&fit=crop', // Dentist with patient
+    title: 'Lentes de Porcelana',
+    description: 'Sorriso transformado com lentes ultrafinas e design digital personalizado. Resultado harmonioso, natural e duradouro — sem desgaste excessivo dos dentes.',
+    image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=2070&auto=format&fit=crop',
   },
   {
     id: 3,
     title: 'Reabilitação Estética Complexa',
-    description: 'Integração multidisciplinar: periodontia, implantes e prótese sobre dentes.',
-    image: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=2080&auto=format&fit=crop', // Dental team
+    description: 'Tratamento integrado envolvendo gengiva, implantes e prótese. Cada etapa planejada digitalmente para um resultado previsível e de alto padrão estético.',
+    image: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=2080&auto=format&fit=crop',
   },
 ];
 
@@ -29,9 +29,9 @@ export default function CaseStudies() {
     <section id="casos" className="py-24 bg-gray-50 text-gray-600 relative overflow-hidden">
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="font-heading text-4xl md:text-5xl mb-6 text-neolife-teal font-bold">Casos Clínicos</h2>
+          <h2 className="font-heading text-4xl md:text-5xl mb-6 text-neolife-teal font-bold">Resultados Reais</h2>
           <p className="text-gray-500 max-w-2xl mx-auto text-lg font-light font-body">
-            Resultados previsíveis baseados em planejamento digital e execução técnica rigorosa.
+            Cada sorriso é único. Veja como o planejamento digital e a execução clínica de excelência transformam a vida dos nossos pacientes.
           </p>
         </div>
 
@@ -63,6 +63,17 @@ export default function CaseStudies() {
               </div>
             </motion.div>
           ))}
+        </div>
+
+        <div className="text-center mt-14">
+          <a
+            href="https://wa.me/553132214335?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20os%20tratamentos"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-8 py-4 bg-neolife-teal text-white rounded-full font-bold hover:bg-teal-700 transition-colors duration-300 shadow-lg shadow-neolife-teal/20 font-heading"
+          >
+            Quero Um Resultado Assim
+          </a>
         </div>
       </div>
     </section>

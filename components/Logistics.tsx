@@ -6,23 +6,23 @@ import { Plane, Calendar, ShieldCheck, Clock } from 'lucide-react';
 const benefits = [
   {
     icon: Plane,
-    title: 'Planejamento de Viagem',
-    description: 'Ajudamos a organizar sua estadia, desde a escolha do hotel até o transporte, garantindo conforto e segurança.',
+    title: 'Suporte na Organização da Viagem',
+    description: 'Orientamos sobre a melhor época para vir, tempo de estadia necessário e logística, para que você aproveite ao máximo cada dia em BH.',
   },
   {
     icon: Calendar,
-    title: 'Cronograma Otimizado',
-    description: 'Agendamos todos os procedimentos de forma concentrada, respeitando o tempo de cicatrização e sua disponibilidade.',
+    title: 'Cronograma Concentrado',
+    description: 'Seus procedimentos são organizados de forma inteligente, respeitando tempos biológicos e otimizando sua agenda durante a estadia.',
   },
   {
     icon: ShieldCheck,
-    title: 'Garantia Contratual',
-    description: 'Oferecemos garantia estendida para todos os tratamentos, com suporte local nos EUA em casos de urgência.',
+    title: 'Garantia Conforme Contrato',
+    description: 'Todos os tratamentos possuem garantia formalizada em contrato, com termos claros e transparentes sobre prazos e coberturas.',
   },
   {
     icon: Clock,
-    title: 'Agilidade e Precisão',
-    description: 'Utilizamos tecnologia digital para reduzir o tempo de cadeira e aumentar a previsibilidade dos resultados.',
+    title: 'Tecnologia Digital Integrada',
+    description: 'Escaneamento intraoral, planejamento 3D e fluxo digital completo para reduzir tempo de cadeira e entregar resultados previsíveis.',
   },
 ];
 
@@ -31,9 +31,9 @@ export default function Logistics() {
     <section id="logistica" className="py-24 bg-gray-50 text-gray-600 relative overflow-hidden">
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="font-heading text-4xl md:text-5xl mb-6 text-neolife-teal font-bold">Para Residentes nos EUA</h2>
+          <h2 className="font-heading text-4xl md:text-5xl mb-6 text-neolife-teal font-bold">Por Que Pacientes nos EUA Nos Escolhem</h2>
           <p className="text-gray-500 max-w-2xl mx-auto text-lg font-light font-body">
-            Entendemos as necessidades específicas de quem vive fora. Nosso protocolo foi desenhado para eliminar incertezas.
+            Sabemos o quanto é difícil encontrar um tratamento odontológico de confiança morando fora. Nosso protocolo foi desenhado para eliminar incertezas e oferecer segurança em cada etapa.
           </p>
         </div>
 
