@@ -49,7 +49,7 @@ export default function Team() {
             transition={{ duration: 0.5 }}
             className="font-heading text-4xl md:text-5xl mb-6 text-neolife-teal font-bold"
           >
-            Nossa Equipe
+            Nossa Equipe de Especialistas
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -77,7 +77,7 @@ export default function Team() {
                 <div className="relative w-36 h-36 rounded-full overflow-hidden bg-gray-100 ring-4 ring-gray-100 group-hover:ring-neolife-teal/30 transition-all duration-500">
                   <Image
                     src={member.image}
-                    alt={member.name}
+                    alt={`${member.name} - ${member.role}`}
                     fill
                     className="object-cover object-top transition-transform duration-700 group-hover:scale-110"
                     sizes="144px"

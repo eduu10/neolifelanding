@@ -69,15 +69,19 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'Dentist',
+  '@type': ['Dentist', 'LocalBusiness'],
+  '@id': 'https://dentistanobrasil.com.br#business',
   name: 'Neolife Odontologia',
   description: 'Clínica odontológica especializada em reabilitação oral, lentes de porcelana e implantes com planejamento digital para brasileiros que vivem no exterior.',
   url: 'https://dentistanobrasil.com.br',
   telephone: '+553132214335',
+  image: 'https://dentistanobrasil.com.br/opengraph-image',
   address: {
     '@type': 'PostalAddress',
+    streetAddress: 'Av. do Contorno 4747 – LJ 15',
     addressLocality: 'Belo Horizonte',
     addressRegion: 'MG',
+    postalCode: '30110-051',
     addressCountry: 'BR',
   },
   geo: {
@@ -85,6 +89,21 @@ const jsonLd = {
     latitude: -19.9167,
     longitude: -43.9345,
   },
+  contactPoint: {
+    '@type': 'ContactPoint',
+    contactType: 'Customer Service',
+    telephone: '+553132214335',
+    areaServed: ['US', 'BR', 'CA', 'AU', 'GB', 'PT'],
+    availableLanguage: ['pt-BR', 'en'],
+  },
+  areaServed: [
+    { '@type': 'Country', name: 'United States' },
+    { '@type': 'Country', name: 'Canada' },
+    { '@type': 'Country', name: 'Brazil' },
+    { '@type': 'Country', name: 'United Kingdom' },
+    { '@type': 'Country', name: 'Portugal' },
+    { '@type': 'Country', name: 'Australia' },
+  ],
   priceRange: '$$$',
   openingHoursSpecification: [
     {

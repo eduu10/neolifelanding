@@ -31,7 +31,7 @@ export default function Hero() {
             Para brasileiros que vivem no exterior
           </span>
           <h1 className="font-heading text-5xl md:text-7xl font-bold text-gray-800 leading-tight mb-6 tracking-tight">
-            Seu sorriso planejado <span className="text-neolife-teal italic font-serif">antes da viagem ao Brasil.</span>
+            Seu sorriso planejado digitalmente <span className="text-neolife-teal italic font-serif">antes da viagem ao Brasil.</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto font-light leading-relaxed mb-10 font-body">
             Reabilitação oral, lentes de porcelana e implantes com planejamento digital prévio. Tudo organizado à distância, executado durante sua estadia no Brasil e acompanhado online após o retorno.

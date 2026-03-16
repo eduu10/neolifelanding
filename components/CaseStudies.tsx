@@ -48,9 +48,11 @@ export default function CaseStudies() {
               <div className="aspect-[4/3] relative overflow-hidden">
                 <Image
                   src={c.image}
-                  alt={c.title}
+                  alt={`${c.title} - Resultado de tratamento na Neolife Odontologia`}
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  quality={80}
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
