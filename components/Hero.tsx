@@ -13,12 +13,12 @@ export default function Hero() {
           src="/bghero.jpg"
           alt="Dentista especialista em clínica moderna"
           fill
-          className="object-cover opacity-20"
+          className="object-cover"
           priority
           sizes="100vw"
-          quality={50}
+          quality={75}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-white/60 to-white" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-white/40 to-white/80" />
       </div>
 
       <div className="container mx-auto px-6 relative z-10 text-center max-w-4xl">
