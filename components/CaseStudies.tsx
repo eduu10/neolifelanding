@@ -8,19 +8,19 @@ const cases = [
     id: 1,
     title: 'Reabilitação Total sobre Implantes',
     description: 'Sorriso completo restaurado com implantes e prótese fixa. Planejamento digital garantiu resultado natural e funcional, devolvendo confiança ao paciente.',
-    image: 'https://images.unsplash.com/photo-1606811841689-23dfddce3e95?q=80&w=1974&auto=format&fit=crop',
+    image: '/img1.jpg',
   },
   {
     id: 2,
     title: 'Lentes de Porcelana',
     description: 'Sorriso transformado com lentes ultrafinas e design digital personalizado. Resultado harmonioso, natural e duradouro — sem desgaste excessivo dos dentes.',
-    image: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=2070&auto=format&fit=crop',
+    image: '/img2.jpg',
   },
   {
     id: 3,
     title: 'Reabilitação Estética Complexa',
     description: 'Tratamento integrado envolvendo gengiva, implantes e prótese. Cada etapa planejada digitalmente para um resultado previsível e de alto padrão estético.',
-    image: 'https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=2080&auto=format&fit=crop',
+    image: '/img3.jpg',
   },
 ];
 
