@@ -10,7 +10,7 @@ export default function Hero() {
       {/* Background Image of Dentist/Clinic */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=60&w=1200&auto=format&fit=crop"
+          src="/bghero.jpg"
           alt="Dentista especialista em clínica moderna"
           fill
           className="object-cover opacity-20"
