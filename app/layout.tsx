@@ -55,6 +55,14 @@ export const metadata: Metadata = {
     siteName: 'Neolife Odontologia',
     locale: 'pt_BR',
     type: 'website',
+    images: [
+      {
+        url: '/opengraph-image',
+        width: 1200,
+        height: 630,
+        alt: 'Neolife Odontologia - Dentista no Brasil para Brasileiros no Exterior',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
